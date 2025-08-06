@@ -21,9 +21,13 @@ This project demonstrates a complete Day 1 workflow for data cleaning and basic 
 
 - **Duplicates:**  
   - Checked for and dropped duplicate rows
+ 
+- ** Feature Engineering by deriving new attribute:**
+  - Adding count of both sibsp column which represents sibling and spouse count and column parch which represents parents and children count by adding 1 as themselves to get new column family_size 
 
 ## Key Code Highlights
 
 - How to analyze missingness and choose sound filling/dropping strategies
 - Effective ways to select, filter, and manipulate data in pandas
 - The reasoning behind statistical imputation choices
+- How to create new feature from existing ones to get valuable insights
