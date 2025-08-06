@@ -52,3 +52,7 @@ df = df.drop_duplicates()
 
 print(df.duplicated().sum()) 
 
+# Creating new attribute family_size by combining column sibsp and parch to get family members count with alongside them as 1
+df['family_size'] = df['sibsp'] + df['parch'] + 1
+
+
